@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/CSS/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/00b33ce115.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Goldman%3A400%2C700"
+  />
+    <style>
+      * {
+  padding: 0;
+  margin: 0;
+}
+body {
+background-color:#859EBB;
+  background-size: cover;
+  font-family: sans-serif;
+  object-fit: cover;
+  font-family: Goldman, "Source Sans Pro";
+}
+section h1 {
+  
+  text-align: center;
+  margin: 100px;
+  font-size: 4rem;
+}
+
+
+.contact-box {
+  width: 500px;
+  background-color:#465f87;
+  box-shadow: 0 0 20px 0 #999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+form {
+  margin: 35px;
+}
+.input-field {
+  width: 400px;
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #777;
+  border-radius: 14px;
+  outline: none;
+}
+.textarea-field {
+  height: 150px;
+  padding-top: 10px;
+}
+.btn {
+  border-radius: 20px;
+  margin-top: 18px;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  margin-left: 150px;
+}
+button:active {
+  background-color: #110f11;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+button:hover {
+  background-color:#c3a817;
+}
+
+
+
+
+footer div a {
+  margin-top: 400px;
+}
+footer div a i:hover {
+  color: #c3a817;
+}
+footer div a:active {
+  transform: translateY(4px);
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 3rem;
+  text-decoration: none;
+  margin-top: 50px;
+}
+
+footer div i {
+   color: black;
+}
+
+
+span p {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #465f87;
+}
+
+.up {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+.up:hover {
+  color: white;
+}
+
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="roll-in-left">
+        <h1>Contact me!</h1>
+      </div>
+      <div class="contact-box">
+        <form>
+          <input type="text" class="input-field" placeholder="Your Name" />
+          <input type="text" class="input-field" placeholder="Your E-mail" />
+          <textarea
+            type="text"
+            class="input-field textarea-field"
+            placeholder="Your Message"
+          ></textarea>
+          <div class="swing-in-top-fwd">
+            <button type="button" class="btn">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <div class="link">
+          <a
+            href="https://www.linkedin.com/in/zakaria-gadelkarim-31840928b/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="git">
+          <a
+            href="https://github.com/dashboard"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="email">
+          <a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app" target="_blank"
+            ><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="twitter">
+          <a href="" target="_blank"
+            ><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </div>
+      <a class="up" href="./00-index.html"
+        ><i class="fa-solid fa-angles-up"></i
+      ></a>
+      <span>
+        <p>Zakaria<span>©2023</span></p>
+      </span>
+    </footer>
+  </body>
+</html>

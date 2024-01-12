@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Goldman%3A400%2C700"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+     
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Goldman, "Source Sans Pro";
+        background-color: #859EBB;
+      }
+
+      footer{
+        height: 100vh;
+        display:flex;
+        justify-content: center;
+      }
+      
+      li{
+        text-decoration: none;
+      }
+      
+      button{
+        padding: 5px;
+        background-color: #c3a817;
+        margin: 50px;
+        font-family: Goldman, "Source Sans Pro";
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .message {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main {
+        display:flex ;
+        position: relative;
+        width: 400px;
+        height: 400px;
+
+        transition: all 1s ease-in-out;
+      }
+      .alfa {
+        text-align: right;
+        padding: 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        background-color: #465f87;
+        transition: all 1s ease-in-out;
+      }
+
+      .bravo {
+        
+        padding: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 200px;
+        background-color:#c3a817;
+        transition: all 1s ease-in-out;
+      }
+      .charly {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 200px;
+        height: 200px;
+        background-color: #c3a817;
+        transition: all 1s ease-in-out;
+      }
+      .delta {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 200px;
+        height: 200px;
+        background-color: #465f87;
+        transition: all 1s ease-in-out;
+      }
+      main:hover .left {
+        transform: translateX(-200px) rotate(-90deg);
+      }
+      main:hover .right {
+        transform: translateX(200px) rotate(90deg);
+      }
+      /* Blue border for screens between 376px and 425px */
+  @media screen and (min-width: 376px) and (max-width: 425px) {
+    body {
+      border: 2px solid 465f87;
+    }
+  }
+  
+  /* Green border for screens between 426px and 768px */
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    body {
+      border: 2px solid green;
+    }
+  }
+  
+  /* Yellow border for screens between 769px and 1024px */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+      border: 2px solid yellow;
+    }
+  }
+  
+  /* Hotpink border for screens between 1025px and 1440px */
+  @media screen and (min-width: 1025px) and (max-width: 1440px) {
+    body {
+      border: 2px solid hotpink;
+    }
+  }
+  
+  /* Azure border for screens wider than 1440px */
+  @media screen and (min-width: 1441px) {
+    body {
+      border: 2px solid azure;
+    }
+  }
+    </style>
+  </head>
+  <body>
+    <nav>
+        
+
+    <div class="box first">
+        <h1>My Skills</h1>
+    <main>
+      <div class="message">
+        The quick brown fox jumps over the lazy dog
+      </div>
+
+      <div class="left alfa"><h1 class="my">My</h1></div>
+      <div class="right bravo"><h1>Skills</h1></div>
+      <div class="left charly"></div>
+      <div class="right delta"></div>
+    </main>
+    <div>
+        <button><a href="./00-index.html">back</a></button>
+    </div>
+  </body>
+</html>

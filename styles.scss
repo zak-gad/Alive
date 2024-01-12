@@ -1,0 +1,143 @@
+:root {
+    --dark:#465f87;
+    --light:#859EBB;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: var(--dark);
+    font-family: Goldman, 'Source Sans Pro';
+    font-size: 1.5rem;
+}
+
+.bottom-half {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    background-color: var(--light);
+    border-top-right-radius: 3em;
+    border-top-left-radius: 3em;
+}
+
+main {
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+}
+
+nav ul {
+    
+    margin: 0 0 0 3em;
+    background: #ff9;
+    background: linear-gradient( #c3a817 , yellow 100%);
+    display: flex;
+    justify-content: space-around;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+   
+}
+
+li {
+    display: inline-block;
+}
+
+section:target {
+     display: block;
+}
+section:last-child{
+    display: block;
+}
+
+section,
+section:target ~ :last-child {
+  display: none;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.welcome img{
+    width: 300px;
+    border-radius: 999px;
+}
+
+.contact {
+    position: relative;
+    margin: 1em;
+    display: inline-block;
+    border: 8em solid #0003;
+    border-top-width: 4em;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom: none;
+}
+
+p.contact::after {
+    position: absolute;
+    top: -4.2em;
+    left: -8.2em;
+    display: inline-block;
+    border: 8em solid var(--dark);
+    border-top-width: 4em;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom: none;
+    content: " ";
+}
+
+p.contact span {
+    font-size: px;
+    position: absolute;
+    display: inline-block;
+    top: -3.5em;
+    left: -4em;
+    width: 8em;
+    z-index: 1;
+}
+
+.social-media {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 1em;
+    width: 100%;
+    justify-content: left;
+}
+
+.social-media img {
+    border-radius: 0;
+    margin: 0 0 .5em;
+    width: 2em;
+    
+}
+
+
+/* -skills-Pag */
+
+.container{
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.box{
+    padding: 500px 100px;
+    display: flex;
+    cursor: pointer;
+    transition: all 1s ease-in;
+    
+}

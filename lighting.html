@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Colors</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #262626;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+div{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+   }
+
+
+
+  h1 {
+    
+ 
+    font-size: 48px;
+    position: relative;
+    animation: lighting 2s linear infinite;
+   
+  }
+
+
+  @keyframes lighting {
+    0% {
+      text-shadow: none;
+  
+    }
+    90% {
+      
+        text-shadow: none;
+    }
+    100% {
+      text-shadow: none;
+      color:rgb(49, 46, 46);
+      /* color: #ffcc00; */
+    }
+
+    
+  }
+
+h1:nth-child(1){
+   animation-delay: 0s;
+    color:red;
+}
+h1:nth-child(2){
+    animation-delay: 0.1s;
+    color: blueviolet;
+}
+h1:nth-child(3){
+    animation-delay: 0.2s;
+    color: yellow;
+}
+h1:nth-child(4){
+    animation-delay: 0.3s;
+    color: green;
+}
+h1:nth-child(5){
+    animation-delay: 0.4s;
+    color: blue;
+}
+h1:nth-child(6){
+    animation-delay: 0.5s;
+    color: orange;
+}
+/* h1:nth-child(7){
+    animation-delay: 0.6s;
+}
+h1:nth-child(8){
+    animation-delay: 0.7s;
+}
+h1:nth-child(9){
+    animation-delay: 0.8;
+}
+h1:nth-child(10){
+    animation-delay: 0.9s;
+}
+h1:nth-child(11){
+    animation-delay: 0.10s;
+} */
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- <h1>I</h1><br>
+      <h1>L</h1>
+      <h1>O</h1>
+      <h1>V</h1>
+      <h1>E</h1><br> -->
+      <h1>C</h1>
+      <h1>O</h1>
+      <h1>L</h1>
+      <h1>O</h1>
+      <h1>R</h1>
+      <h1>S</h1>
+    </div>
+  </body>
+</html>
